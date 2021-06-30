@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Volumes/External Harddrive/Scala-Programming-Language/ello/src/main/scala/example/Hello.scala:86:20: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m  val unit1 = Unit = ()[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Volumes/External Harddrive/Scala-Programming-Language/ello/src/main/scala/example/Hello.scala:89:20: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m  val unit2 = Unit = ()[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
