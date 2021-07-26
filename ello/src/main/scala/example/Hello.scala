@@ -55,11 +55,89 @@ object Hello {
       1338 
     }
     println(mix)
+
+    println('a')
+    println('A')
+
+    println('\u2500')
+
+    println(
+      "hello" + " " + " World "
+    )
+
+    //If expression and the type hiearchary
+    val result = 
+      if(true && true)
+        "good"
+      else
+        "bad"
+    println(result)
+      
+    //if true: return assign 5 to the value, otherwise, throw an exception
+    val resul_of_different_type = if(true) 5 else throw new Exception
+
+    println(resul_of_different_type)
     
+    //if - statement can be assinged inside a function
+    def wannaWatchAMovieOrGoForIceCream(
+      movie: Boolean, 
+      iceCream: Boolean
+    ): String = 
+      if(movie && iceCream)
+        "awesome"
+      else if (movie || iceCream)
+        "still cool!"
+      else
+        "boring"
+    
+    println(wannaWatchAMovieOrGoForIceCream(movie = false, iceCream=false))
+    println(wannaWatchAMovieOrGoForIceCream(movie = true, iceCream=true))
+    println(wannaWatchAMovieOrGoForIceCream(movie = false, iceCream=true))
+    println(wannaWatchAMovieOrGoForIceCream(movie = true, iceCream=false))
+
+    //boolean expression statement:
+    println(1337 == 1337)
+    println(1337 != 1337) 
+    println(1337 < 1337)
+    println(1337 > 1337)
+    println(1337 >= 1337)
+
+
+    //eq: equal 
+    //ne: not equal
+    println("test" eq "test")
+    println("test" ne "test")
+
+    println(true && false)
+
+    println(true || false)
+    
+    //Loops and tail recursion:
+    //simple function to run a recursive loop
+    def loop(acc: Int): Unit = 
+      if(acc < 10){
+        println(acc)
+
+        loop(acc + 1)
+      }
+
+    loop(0)
+
+    //tail recursion: the recursion will have to come back and do something
+    @scala.annotation.tailrec
+    def loop_tail_rec() = { 
+      var acc = 0 
+      while(acc < 0){
+        println(acc)
+        acc += 1
+
+      }
+     
   }
 
+  loop_tail_rec()
+  }
   //Specifying a type: 
-
   var const: Int = 1330
   def function2(p1: Int, p2: Int): Int = 23
   println(const)
@@ -119,6 +197,8 @@ object Hello {
   
 
   println("-" * 50)
+
+
 
 }
 
